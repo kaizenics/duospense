@@ -33,7 +33,7 @@ export function FAQ() {
   return (
     <section className="py-16 relative bg-background">
       <Container variant={"fullMobileConstrainedPadded"}>
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-background to-background" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-background to-background" />
         <div className="relative z-10">
           <h2 className="font-heading text-3xl font-bold text-center mb-12">
             Frequently Asked Questions

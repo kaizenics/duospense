@@ -19,7 +19,7 @@ export function Hero() {
                   Duospense helps you manage your finances effortlessly. Stay on
                   top of your spending and achieve your financial goals.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
+                <div className="mt-10 flex items-center gap-x-3">
                   <Button asChild>
                     <Link href="/dashboard">Get Started</Link>
                   </Button>
