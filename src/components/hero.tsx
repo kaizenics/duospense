@@ -9,7 +9,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-background" />
       <Container variant={"fullMobileConstrainedPadded"}>
         <div className="relative overflow-hidden">
-          <div className="mx-auto py-16 sm:py-44">
+          <div className="mx-auto py-16 sm:py-32">
             <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
               <div>
                 <h1 className="font-heading text-4xl font-extrabold tracking-tight text-primary sm:text-5xl lg:text-6xl">
@@ -29,7 +29,7 @@ export function Hero() {
                 </div>
               </div>
               <div className="mt-10 backdrop-blur-sm lg:mt-0 bg-card rounded-xl shadow-lg p-6 border">
-                <div className="absolute inset-0 bg-primary/30 rounded-full blur-3xl" />
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl" />
                 <h2 className="font-heading text-2xl font-bold mb-4 text-card-foreground">
                   Expense Overview
                 </h2>
