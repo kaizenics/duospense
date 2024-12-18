@@ -39,7 +39,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center mb-12 text-primary"
+            className="font-heading text-4xl font-bold text-center mb-12 text-primary"
           >
             What Our Users Say
           </motion.h2>
@@ -74,7 +74,7 @@ export function Testimonials() {
                           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                         </svg>
                       </motion.div>
-                      <p className="text-lg mb-4">{testimonial.content}</p>
+                      <p className="font-sans text-lg mb-4">{testimonial.content}</p>
                     </CardContent>
                     <CardFooter className="flex items-center mt-4 space-x-4">
                       <Avatar>
@@ -85,8 +85,8 @@ export function Testimonials() {
                         <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                       </Avatar>
                       <div>
-                        <p className="font-semibold">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="font-heading font-semibold">{testimonial.name}</p>
+                        <p className="font-sans text-sm text-muted-foreground">
                           {testimonial.role}
                         </p>
                       </div>
