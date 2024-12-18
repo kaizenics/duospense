@@ -15,8 +15,10 @@ export function Hero() {
           <div className="mx-auto py-16 sm:py-32">
             <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
               <div>
-                <h1 className="font-heading text-4xl font-extrabold tracking-tight text-primary sm:text-5xl lg:text-6xl">
-                  Track Your<FlipWords words={words}/>with Ease
+                <h1 className="font-heading text-4xl font-extrabold tracking-tight leading-tight text-primary sm:text-5xl lg:text-6xl">
+                  Track Your
+                  <FlipWords words={words} />
+                  with Efficiency
                 </h1>
                 <p className="font-sans mt-6 max-w-3xl text-xl text-muted-foreground">
                   Duospense helps you manage your finances effortlessly. Stay on

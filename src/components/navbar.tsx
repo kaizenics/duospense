@@ -16,7 +16,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-background/20 border-b border-border/40">
+    <nav className="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-background/10 border-b border-border/40">
       <Container variant={"fullMobileConstrainedPadded"}>
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="font-heading text-2xl font-bold text-primary">
