@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <div className="relative bg-background pt-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-background" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background" />
       <Container variant={"fullMobileConstrainedPadded"}>
         <div className="relative overflow-hidden">
           <div className="mx-auto py-16 sm:py-32">
