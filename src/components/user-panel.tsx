@@ -25,7 +25,7 @@ export function UserPanel() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="font-heading text-3xl font-bold text-primary mb-2">Welcome back, Alex!</h1>
+        <h1 className="font-heading text-3xl font-bold text-primary mb-2">Welcome back, Niko!</h1>
         <p className="font-sans text-muted-foreground">Here&apos;s an overview of your finances.</p>
       </motion.div>
 

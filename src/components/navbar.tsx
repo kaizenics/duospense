@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+
+import duospenseIcon from "@/assets/duospense-icon.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,16 +18,24 @@ export function Navbar() {
     <nav className="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-background/10 border-b border-border/40">
       <Container variant={"fullMobileConstrainedPadded"}>
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="font-heading text-2xl font-bold text-primary">
-            Duospense
-          </Link>
+          <div className="flex items-center space-x-2">
+            <Image
+              src={duospenseIcon}
+              width={32}
+              height={32}
+              alt="Duospense Logo"
+            />
+            <Link
+              href="/"
+              className="font-heading text-2xl font-bold text-black dark:text-white"
+            >
+              Duospense
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex font-sans items-center space-x-4">
-            <Link
-              href="/login"
-              className="text-foreground hover:text-primary"
-            >
+            <Link href="/login" className="text-foreground hover:text-primary">
               Log In
             </Link>
             <Button asChild>

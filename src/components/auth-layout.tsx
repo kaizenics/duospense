@@ -7,6 +7,8 @@ interface AuthLayoutProps {
   subtitle: string
 }
 
+import duospenseIcon from "@/assets/duospense-icon.png"
+
 export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-primary/5 p-4 py-8 md:py-12">
@@ -24,7 +26,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
         <div className="text-center order-1 lg:order-2">
           <div className="max-w-md mx-auto">
             <Image
-              src="/placeholder.svg?height=200&width=200"
+              src={duospenseIcon}
               width={200}
               height={200}
               alt="Duospense Logo"

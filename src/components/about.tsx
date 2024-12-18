@@ -30,6 +30,10 @@ const features = [
   },
 ];
 
+import dashboard from "@/assets/dashboard.png";
+import expenses from "@/assets/expenses.png";
+import insights from "@/assets/insights.png";
+
 export function About() {
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
 
@@ -121,7 +125,7 @@ export function About() {
                 </TabsList>
                 <TabsContent value="dashboard" className="w-full h-full">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src={dashboard}
                     alt="Duospense Dashboard"
                     layout="fill"
                     objectFit="cover"
@@ -130,7 +134,7 @@ export function About() {
                 </TabsContent>
                 <TabsContent value="expenses" className="w-full h-full">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src={expenses}
                     alt="Duospense Expenses"
                     layout="fill"
                     objectFit="cover"
@@ -139,7 +143,7 @@ export function About() {
                 </TabsContent>
                 <TabsContent value="insights" className="w-full h-full">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src={insights}
                     alt="Duospense Insights"
                     layout="fill"
                     objectFit="cover"
