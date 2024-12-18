@@ -2,8 +2,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ExpenseChart } from "@/components/ui/expense-chart";
 import { Container } from "@/components/ui/container";
+import { FlipWords } from "@/components/ui/flip-words";
 
 export function Hero() {
+  const words = ["Budgets", "Savings", "Goals"];
+
   return (
     <div className="relative bg-background pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-background" />
@@ -13,7 +16,7 @@ export function Hero() {
             <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
               <div>
                 <h1 className="font-heading text-4xl font-extrabold tracking-tight text-primary sm:text-5xl lg:text-6xl">
-                  Track Your Expenses with Ease
+                  Track Your<FlipWords words={words}/>with Ease
                 </h1>
                 <p className="font-sans mt-6 max-w-3xl text-xl text-muted-foreground">
                   Duospense helps you manage your finances effortlessly. Stay on
