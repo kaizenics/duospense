@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter, Space_Grotesk } from 'next/font/google'
 import "./globals.css"
 import { ThemeProvider } from "@/components/ui/theme-provider"
+import { Toaster } from "sonner"
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster richColors position="top-right" />
       </body>
     </html>
   )

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import { useState } from "react"
 import { Bell, Search, Menu, Plus } from 'lucide-react'
 import { Input } from "@/components/ui/input"
@@ -66,8 +67,8 @@ export function MiniNavbar() {
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="font-sans">Profile</DropdownMenuItem>
-            <DropdownMenuItem className="font-sans">Settings</DropdownMenuItem>
+            <DropdownMenuItem className="font-sans"><Link href="/dashboard/profile">Profile</Link></DropdownMenuItem>
+            <DropdownMenuItem className="font-sans"><Link href="/dashboard/settings">Settings</Link></DropdownMenuItem>
             <DropdownMenuItem className="font-sans text-rose-500">Log out</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
