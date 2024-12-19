@@ -70,7 +70,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="container mx-auto p-6 space-y-8">
+    <div className="container mx-auto p-4 space-y-8">
       <h1 className="font-heading text-3xl font-bold text-primary">User Profile</h1>
 
       <Card>

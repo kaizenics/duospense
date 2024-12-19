@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "Duospense - Expense Tracker",
+  title: "Duospense",
   description: "Track your expenses with ease",
 }
 

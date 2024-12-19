@@ -22,7 +22,7 @@ const faqs = [
 
 export default function HelpPage() {
   return (
-    <div className="container mx-auto p-4 space-y-6">
+    <div className="space-y-6">
       <h1 className="font-heading text-3xl font-bold text-primary mb-6">Help Center</h1>
       
       <Card>
